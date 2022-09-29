@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+
+<head th:replace="fragments/frags :: head"></head>
+
+<body>
+<div th:insert="fragments/frags :: header"></div>
+
+<h1>Best Srved With...</h1>
+<br>
+
+<img th:src="@{/img/meal.jpeg}">
+<img th:src="@{/img/chicken.jpeg}">
+<img th:src="@{/img/bread.jpeg}">
+
+<div th:replace="fragments/frags :: footer"></div>
+
+</body>
+</html>

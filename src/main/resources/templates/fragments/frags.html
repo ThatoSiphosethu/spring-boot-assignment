@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link type="text/css" rel="stylesheet" th:href="@{/style.css}">
+</head>
+
+<header th:fragment="navigation">
+  <a  th:href="@{/}">
+<!--    <img class="logo" th:src="@{/img/chakalaka.jpg}">-->
+  </a>
+
+
+  <ul class="nav nav-pills nav-fill">
+    <li class="nav-item">
+      <a class="nav-link active" th:href="@{/}">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" th:href="@{/chakalaka/ingredients}">Ingredients</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" th:href="@{/chakalaka/preparing}">How To</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link " th:href="@{/chakalaka/other-dishes}">Goes With</a>
+    </li>
+  </ul>
+
+
+</header>
+
+<footer th:fragment="footer">
+  Spring Boot Assignment: Three-Step Tutorial | Thato Ramalepa
+</footer>
+
+</html>
